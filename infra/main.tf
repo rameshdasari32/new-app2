@@ -4,7 +4,7 @@
   name        = var.name
   environment = var.bucket_name
 }*/
-/*
+
 module "networking" {
   source               = "./networking"
   vpc_cidr             = var.vpc_cidr
@@ -13,7 +13,7 @@ module "networking" {
   eu_availability_zone = var.eu_availability_zone
   cidr_private_subnet  = var.cidr_private_subnet
 }
-
+/*
 module "security_group" {
   source                     = "./security-groups"
   ec2_sg_name                = "SG for EC2 to enable SSH(22) and HTTP(80)"
