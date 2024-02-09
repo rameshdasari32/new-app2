@@ -20,7 +20,7 @@ module "security_group" {
   vpc_id                     = module.networking.dev_proj_1_vpc_id
   public_subnet_cidr_block   = tolist(module.networking.public_subnet_cidr_block)
   ec2_sg_name_for_python_api = "SG for EC2 for enabling port 5000"
-}
+} /*
 
 module "ec2" {
   source                   = "./ec2"
@@ -85,4 +85,4 @@ module "rds_db_instance" {
   mysql_username       = "dbuser"
   mysql_password       = "dbpassword"
   mysql_dbname         = "devprojdb"
-}
+} */
